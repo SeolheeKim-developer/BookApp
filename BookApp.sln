@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookApp", "BookApp\BookApp.
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "BookApp.SqlServer", "BookApp.SqlServer\BookApp.SqlServer.sqlproj", "{301F83BC-49D5-47DE-8A12-8A2E2DF74526}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookApp.Shared", "BookApp.Shared\BookApp.Shared.csproj", "{18539EBC-4F78-4266-9FFF-554D6028957D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{301F83BC-49D5-47DE-8A12-8A2E2DF74526}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{301F83BC-49D5-47DE-8A12-8A2E2DF74526}.Release|Any CPU.Build.0 = Release|Any CPU
 		{301F83BC-49D5-47DE-8A12-8A2E2DF74526}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{18539EBC-4F78-4266-9FFF-554D6028957D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18539EBC-4F78-4266-9FFF-554D6028957D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18539EBC-4F78-4266-9FFF-554D6028957D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18539EBC-4F78-4266-9FFF-554D6028957D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
