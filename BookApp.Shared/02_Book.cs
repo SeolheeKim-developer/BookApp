@@ -25,6 +25,11 @@ namespace BookApp.Shared
         /// Description of the Book
         /// </summary>
         public string Description { get; set; }
+
+        /// <summary>
+        /// create date
+        /// </summary>
+        public DateTime? Created { get; set; }
     }
     [Table("Books")]
     public class Book : BookBase
