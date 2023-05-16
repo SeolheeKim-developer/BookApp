@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Dul.Articles;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -58,6 +59,7 @@ namespace BookApp.Shared
             return model;
         }
         #endregion
+
         #region Update : UpdateAsync
 
         public async Task<bool> UpdateAsync(Book model)
@@ -74,6 +76,7 @@ namespace BookApp.Shared
             return false;
         }
         #endregion
+
         #region Delete : DeleteAsync
         public async Task<bool> DeleteAsync(int id)
         {
@@ -88,7 +91,20 @@ namespace BookApp.Shared
                 _logger?.LogError($"ERROR({nameof(DeleteAsync)}): {e.Message}");
             }
             return false;
-        } 
+        }
+        #endregion
+        #region Filtering : GetArticlesAsync
+        //filtering
+        public Task<ArticleSet<Book, int>> GetArticlesAsync<TParentIdentifier>(int pageIndex, int pageSize, string searchField, string searchQuery, string sortOrder, TParentIdentifier parentIdentifier)
+        {
+            throw new NotImplementedException();
+        }
+        #endregion
+        #region
+        public Task<ArticleSet<Book, int>> GetAllAsync<TParentIdentifier>(int pageIndex, int pageSize, string searchField, string searchQuery, string sortOrder, TParentIdentifier parentIdentifier)
+        {
+            throw new NotImplementedException();
+        }
         #endregion
 
 
