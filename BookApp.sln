@@ -9,7 +9,9 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "BookApp.SqlServer", "BookAp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookApp.Shared", "BookApp.Shared\BookApp.Shared.csproj", "{18539EBC-4F78-4266-9FFF-554D6028957D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookApp.Shared.Tests", "BookApp.Shared.Tests\BookApp.Shared.Tests.csproj", "{65677979-0D4C-4E08-84D5-AC58C3F46108}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookApp.Shared.Tests", "BookApp.Shared.Tests\BookApp.Shared.Tests.csproj", "{65677979-0D4C-4E08-84D5-AC58C3F46108}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookApp.Apis", "BookApp.Apis\BookApp.Apis.csproj", "{AE399F38-F223-4EB9-8D80-7047F14940AE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{65677979-0D4C-4E08-84D5-AC58C3F46108}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65677979-0D4C-4E08-84D5-AC58C3F46108}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65677979-0D4C-4E08-84D5-AC58C3F46108}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE399F38-F223-4EB9-8D80-7047F14940AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE399F38-F223-4EB9-8D80-7047F14940AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE399F38-F223-4EB9-8D80-7047F14940AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE399F38-F223-4EB9-8D80-7047F14940AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

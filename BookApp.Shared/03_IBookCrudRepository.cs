@@ -1,9 +1,4 @@
 ﻿using Dul.Articles;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BookApp.Shared
 {
@@ -21,6 +16,7 @@ namespace BookApp.Shared
     /// </summary>
     /// <typeparam name="T"></typeparam>
     public interface IBookCrudRepository<T> : ICrudRepositoryBase<T, int>
+        where T : class
     {
         //Empty
     }
