@@ -1,5 +1,4 @@
 ﻿using BookApp.Shared;
-using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookApp.Apis.Api
@@ -7,7 +6,6 @@ namespace BookApp.Apis.Api
     [ApiController]
     [Route("api/Books")]
     [Produces("application/json")]//defaut
-    [EnableCors("AllowAnyOrigin")]
     public class BooksController : ControllerBase
     {
 

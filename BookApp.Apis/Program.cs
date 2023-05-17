@@ -4,8 +4,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Hosting;
-
 
 namespace BookApp.Apis
 {
@@ -19,7 +17,6 @@ namespace BookApp.Apis
 
             // Add services to the container.
             AddDependencyInjectionContainerForBookApp(builder.Services, configuration);
-
 
             //https://localhost:44405/
             #region CORS

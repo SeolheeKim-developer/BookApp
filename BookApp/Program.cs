@@ -20,24 +20,7 @@ internal class Program
 
 
         AddDependencyInjectionContainerForBookApp(builder.Services, configuration);
-        #region CORS
-        //[CORS][1] CORS
-        //[CORS][1][1] Allow all
-        builder.Services.AddCors(options =>
-        {
-            //[A] [EnableCors] 
-            options.AddDefaultPolicy(builder =>
-            {
-                builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod();
-            });
-            //[B] [EnableCors("AllowAnyOrigin")] 
-            options.AddPolicy("AllowAnyOrigin", builder =>
-                builder
-                    .AllowAnyOrigin()
-                    .AllowAnyMethod()
-                    .AllowAnyHeader());
-        });
-        #endregion
+
 
         var app = builder.Build();
         
