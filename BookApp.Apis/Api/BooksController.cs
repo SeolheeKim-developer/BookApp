@@ -1,21 +1,21 @@
 ﻿using BookApp.Shared;
 using Microsoft.AspNetCore.Mvc;
 
-namespace BookApp.Apis.Controllers
+namespace BookApp.Apis.Api
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/Books")]
     [Produces("application/json")]//defaut
     public class BooksController : ControllerBase
     {
-        
+
         private readonly IBookRepository _repository;
         private readonly ILogger<BooksController> _logger;
 
         public BooksController(IBookRepository repository, ILoggerFactory loggerFactory)
         {
-            this._repository = repository ?? throw new ArgumentNullException(nameof(BooksController));
-            this._logger = loggerFactory.CreateLogger<BooksController>();
+            _repository = repository ?? throw new ArgumentNullException(nameof(BooksController));
+            _logger = loggerFactory.CreateLogger<BooksController>();
         }
         #region output
         //Get api/Books
