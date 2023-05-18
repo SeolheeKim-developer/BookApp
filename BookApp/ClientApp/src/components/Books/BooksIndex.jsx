@@ -1,12 +1,19 @@
-﻿import Reac, { Component } from 'react';
+﻿import React, { Component } from 'react';
+
+
 export class BooksIndex extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
             books: [],
-            loading: false
+            loading: true
         };
+    }
+    componentDidMount() {
+        this.populateBooksData();
+        //this.populateBooksDataWithAxios();
+        //this.populateBooksDataWithAxiosAsync();
     }
 
     //display book list
@@ -47,5 +54,13 @@ export class BooksIndex extends Component {
                 { contents }
             </div>
         );
+    }
+
+    //[!] Web API 호출하는 3가지 모양 
+    //[1] Fetch API 
+    async populateBooksData() {
+        const response = await fetch('/api/Books');
+        const data = await response.json();
+        this.setState({ books: data, loading: false });
     }
 }
